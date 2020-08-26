@@ -15,14 +15,17 @@
 
         <header class="heading">
             <h1>Tic Tac Toe</h1>
-            <label for="player1-name">Player One (X): </label>
-            <input type="text" class="player-input" id="player1-name">
-            <br>
-            <label for="player2-name">Player Two (O): </label>
-            <input type="text" class="player-input" id="player2-name">
+            <div id="player1">
+                <label for="player1-name">Player One (X): </label>
+                <input type="text" class="player-input" id="player1-name">
+            </div>
+            <div id="player2">
+                <label for="player2-name">Player Two (O): </label>
+                <input type="text" class="player-input" id="player2-name">
+            </div>
 
             <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="customSwitches">
+                <input type="checkbox" class="custom-control-input" id="customSwitches" autocomplete="off">
                 <label class="custom-control-label" for="customSwitches">Play against AI</label>
               </div>
             <button type="button" class="btn btn-primary startBtn">Start Game</button>
